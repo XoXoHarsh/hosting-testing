@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const getMessage = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_URL}/`);
+        const response = await fetch(`${import.meta.env.VITE_URL}`);
         const data = await response.json();
         setMessage(data.message);
         console.log(response);
